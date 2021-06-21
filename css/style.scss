@@ -165,13 +165,13 @@ img{
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
+    margin: 10px 0 30px;
   }
   &__content{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    margin: 10px 0 30px;
   }
   &__title{
     font-weight: bold;
@@ -194,12 +194,66 @@ img{
     &__item{
       background: #FFFFFF;
       width: 230px;
+      padding: 30px 0 30px;
     }
   }
   &__img{
-    margin-top: 30px;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
 }
+.advice{
+  padding: 125px 0 ;
+  text-align: center;
+  background: #FAFAFA;
+  &__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+  }
+  &__desc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 10px 0 35px;
+  }
+  &__box{
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &__item{
+      background: #FFFFFF;
+      padding-top: 30px;
+      height: 321px;
+      text-align: left;
+      img{
+        width: 100%;
+      }
+
+    }
+    &__title{
+      font-weight: bold;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      margin-left: 29px;
+    }
+    &__desc{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin: 15px 22px 30px 29px;
+    }
+  }
+}
+
+
 
 
 
