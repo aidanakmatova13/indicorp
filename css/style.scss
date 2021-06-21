@@ -31,6 +31,10 @@ img{
   max-width: 100%;
   margin: auto;
 }
+button{
+  cursor: pointer;
+}
+
 
 // =================REUSABLE BLOCKS================= //
 
@@ -38,6 +42,19 @@ img{
   max-width: 1080px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.section__title{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+.section__desc{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
 }
 
 
@@ -173,18 +190,7 @@ img{
     line-height: 24px;
     letter-spacing: 0.1px;
   }
-  &__title{
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 57px;
-    letter-spacing: 0.2px;
-    margin-bottom: 10px;
-  }
   &__desc{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
     margin: 10px 0 50px;
   }
   &__box{
@@ -209,18 +215,7 @@ img{
   padding: 125px 0 ;
   text-align: center;
   background: #FAFAFA;
-  &__title{
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 57px;
-    letter-spacing: 0.2px;
-  }
   &__desc{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
     margin: 10px 0 35px;
   }
   &__box{
@@ -252,7 +247,123 @@ img{
     }
   }
 }
+.about{
+  padding: 100px 0 100px;
+  text-align: center;
+  &__title{
+    width: 511px;
+    margin: 0 auto;
+  }
+  &__desc{
+    margin: 15px 0 100px;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-column-gap: 121px;
+    &__img{
+      position: relative;
+      .button__svg{
+        position: absolute;
+        left: 250px;
+        top: 170px;
+        cursor: pointer;
+      }
+    }
+    &__right{
+      text-align: left;
+      &__desc{
+        margin: 10px 0 51px;
+      }
+    }
+    &__line{
+      display: flex;
+      margin-bottom: 33px;
+      &__info{
+        margin-left: 20px;
+      }
+      &__title{
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252B42;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      &__desc{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
 
+}
+.brands{
+  background: #FAFAFA;
+  padding-top: 50px;
+
+  &__container{
+    width: 1054px;
+    position: relative;
+  }
+  &__line{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 137px;
+  }
+  &__subscribe-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 50px;
+    background: #16697A;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: -200px;
+    &__title{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      width: 260px;
+    }
+    form{
+      input{
+        width: 333px;
+        padding: 15px 0 15px 20px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+      }
+      .brands__btn{
+        background: #FFA62B;
+        border-radius: 0 5px 5px 0;
+        color: #FFFFFF;
+        margin-left: -6px;
+        padding: 15px 22px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  &__bottom-line{
+    background: #252B42;
+    height: 77px;
+  }
+}
 
 
 
