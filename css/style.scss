@@ -125,6 +125,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     margin-top: 80px;
+    margin-bottom: -19px;
   }
 }
 .box__item {
@@ -154,9 +155,50 @@ img{
   &:hover &__desc {
     color: #FFFFFF;
   }
-  &:hover svg .fill{
-    color: #FFFFFF;
 }
+.features{
+  text-align: center;
+  padding: 212px 0 80px;
+  background: #FAFAFA;
+  &__number{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+  }
+  &__content{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 10px 0 30px;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+  &__desc{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 10px 0 50px;
+  }
+  &__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    &__item{
+      background: #FFFFFF;
+      width: 230px;
+    }
+  }
+  &__img{
+    margin-top: 30px;
+  }
 }
 
 
