@@ -90,6 +90,16 @@ button {
   color: #737373;
   margin-right: 21px;
 }
+
+.header__burger-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__burger-menu svg {
+  margin-left: 20px;
+}
+
 .hero {
   background-image: url("../images/cover.png");
   background-position: center;
@@ -286,7 +296,7 @@ button {
 }
 .about__content__img .button__svg {
   position: absolute;
-  left: 250px;
+  left: 228px;
   top: 170px;
   cursor: pointer;
 }

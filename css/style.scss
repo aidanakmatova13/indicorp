@@ -85,9 +85,14 @@ button{
     color: #737373;
     margin-right: 21px;
   }
-  &__buger-menu {
 
-  }
+}
+.header__burger-menu{
+  display: flex;
+  align-items: center;
+}
+.header__burger-menu svg{
+  margin-left: 20px;
 }
 // =================HERO================= //
 
@@ -282,7 +287,7 @@ button{
       position: relative;
       .button__svg{
         position: absolute;
-        left: 250px;
+        left: 228px;
         top: 170px;
         cursor: pointer;
       }
@@ -551,8 +556,5 @@ button{
     }
   }
 }
-
-
-
 
 
