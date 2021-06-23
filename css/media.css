@@ -32,6 +32,13 @@
         font-size: 55px;
         line-height: 77px;
     }
+    .header__menu {
+        position: absolute;
+        top: 116px;
+        text-align: center;
+        padding-left: unset;
+        margin: auto;
+    }
     .hero__desc {
         font-size: 19px;
         margin: 27px 0 35px;
@@ -149,13 +156,6 @@
         padding-top: 36px;
         position: unset;
     }
-    .header__menu {
-        position: absolute;
-        top: 116px;
-        text-align: center;
-        padding-left: 168px;
-    }
-
     .header__link {
         font-weight: normal;
         font-size: 30px;
@@ -188,11 +188,20 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
+        padding: 20px 0 20px;
     }
     .hero__btn {
         width: 206px;
         display: block;
         margin: auto;
+    }
+    .header__menu {
+        position: absolute;
+        top: 116px;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
     }
     .hero__btn__transparent {
         margin-top: 25px;
@@ -442,5 +451,18 @@
 
 }
 @media (max-width: 480px){
+    .header__menu {
+        position: absolute;
+        top: 116px;
+        text-align: center;
+        margin: auto;
+    }
+    .hero__content {
+        width: 350px;
+    }
+    .hero__desc {
+        width: 226px;
+        margin: auto;
+    }
 }
 
