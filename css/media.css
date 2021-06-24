@@ -1,22 +1,77 @@
+@media (max-width: 1400px) {
+    .container{
+        max-width: 1170px;
+    }
+    .header__burger-menu svg:nth-child(1){
+        opacity: 0;
+    }
+    .header__burger-menu svg:nth-child(2){
+        opacity: 0;
+    }
+    .header__menu-mobile{
+        display: none;
+    }
+    .brands__subscribe-boxmobile{
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 970px;
     }
-
-
+    .header__menu-mobile{
+        display: none;
+    }
     .features__box {
 
         grid-column-gap: 16px;
     }
-    .brands__subscribe-box-mobile{
+    .header__burger-menu svg:nth-child(1){
+        opacity: 0;
+    }
+    .header__burger-menu svg:nth-child(2){
+        opacity: 0;
+    }
+    .brands__subscribe-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 50px;
+        background: #16697A;
+        border-radius: 2px;
+        position: absolute;
+        width: 100%;
+        bottom: -200px;
+        margin: 0 20px 0 -15px;
+    }
+    .brands__subscribe-boxmobile{
         display: none;
     }
+
+
 }
 @media (max-width: 992px) {
     .container {
         max-width: 750px;
     }
-
+    .brands__subscribe-boxmobile{
+        display: none;
+    }
+    .header__burger-menu svg:nth-child(1){
+        opacity: 0;
+    }
+    .header__burger-menu svg:nth-child(2){
+        opacity: 0;
+    }
+    .header__menu-mobile{
+        display: none;
+    }
+    .header__menu {
+        position: unset;
+        top: 116px;
+        text-align: center;
+        margin: auto;
+    }
     .hero__content {
         width: 480px;
     }
@@ -31,13 +86,6 @@
         font-weight: 800;
         font-size: 55px;
         line-height: 77px;
-    }
-    .header__menu {
-        position: absolute;
-        top: 116px;
-        text-align: center;
-        padding-left: unset;
-        margin: auto;
     }
     .hero__desc {
         font-size: 19px;
@@ -125,9 +173,7 @@
     .brands__subscribe-box form .brands__btn {
         padding: 13px 20px;
     }
-    .brands__subscribe-box {
-        width: unset;
-    }
+
     .touch {
         padding: 70px 0 96px;
     }
@@ -144,13 +190,30 @@
     .footer__desc {
         font-size: 13px;
     }
-    .brands__subscribe-box-mobile{
-        display: none;
-    }
+
 }
 @media (max-width: 768px) {
     .container {
         max-width: 500px;
+    }
+    .consulting__container{
+        max-width: 481px;
+    }
+    .header__burger-menu svg:nth-child(1){
+        opacity: unset;
+    }
+    .header__burger-menu svg:nth-child(2){
+        opacity: unset;
+    }
+    .header__menu-mobile{
+        display: unset;
+    }
+    .header__menu-mobile {
+        margin-top: 96px;
+        margin: auto;
+    }
+    .header__navbar {
+        margin-bottom: 96px;
     }
     .header {
         padding-top: 36px;
@@ -166,12 +229,14 @@
 
     .header__burger-menu {
         display: flex;
-        align-items: center;}
+        align-items: center;
+        margin-bottom: 96px;
+    }
     svg {
         margin-left: 33px;
     }
     .hero {
-        margin-top: 422px;
+        margin-top: 98px;
         text-align: center;
         padding-bottom: 205px;
     }
@@ -196,12 +261,7 @@
         margin: auto;
     }
     .header__menu {
-        position: absolute;
-        top: 116px;
-        text-align: center;
-        margin: auto;
-        left: 0;
-        right: 0;
+        display: none;
     }
     .hero__btn__transparent {
         margin-top: 25px;
@@ -352,29 +412,50 @@
     .brands__line svg :last-child{
         margin-bottom: 100px;
     }
-    .brands__subscribe-box {
-        display: unset;
-        margin-left: -253px;
-        width: 490px;
-    }
-    .brands__subscribe-box__title {
-            width: 252px;
-            margin: auto;
-            margin-bottom: 30px;
-        }
+
+
     .brands__bottom-line {
         background: #FAFAFA;
     }
     .brands__subscribe-box {
-        display: unset;
-        margin-left: -253px;
-        width: 490px;
-        margin-bottom: -48px;
-        margin-top: 100px;
+        display: none;
     }
-    .brands__subscribe-box form input {
-        width: 223px;
+    .brands__subscribe-boxmobile{
+        padding: 33px 50px;
+        background: #16697A;
+        border-radius: 2px;
+        width: 100%;
     }
+    .brands__subscribe-box__title{
+        margin: auto;
+    }
+    .brands__subscribe-box__title{
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 250px;
+        padding: 15px 0 15px 20px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+    }
+    .brands__btn{
+        background: #FFA62B;
+        border-radius: 0 5px 5px 0;
+        color: #FFFFFF;
+        margin-left: -6px;
+        padding: 15px 22px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+    }
+
     .touch {
         padding: 159px 0 131px;
     }
@@ -447,6 +528,9 @@
     .about__content__right__desc{
         margin-left: 64px;
     }
+    .brands__container{
+        width: unset;
+    }
 
 
 }
@@ -458,11 +542,35 @@
         margin: auto;
     }
     .hero__content {
-        width: 350px;
+        width: unset;
     }
     .hero__desc {
-        width: 226px;
         margin: auto;
+    }
+    input {
+        width: 157px;
+        padding: 10px 0 10px 18px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+    }
+    .brands__btn {
+        background: #FFA62B;
+        border-radius: 0 5px 5px 0;
+        color: #FFFFFF;
+        margin-left: -6px;
+        padding: 10px 18px;
+        border: 1px solid #E6E6E6;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+    }
+    .brands__subscribe-boxmobile {
+        display: none;
     }
 }
 
