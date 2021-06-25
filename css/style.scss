@@ -287,8 +287,10 @@ button{
       position: relative;
       .button__svg{
         position: absolute;
-        left: 228px;
-        top: 170px;
+        right:0;
+        left:0;
+        margin:0 auto;
+        top:170px;
         cursor: pointer;
       }
     }
@@ -323,6 +325,9 @@ button{
     }
   }
 
+}
+.top-menu{
+  display: none;
 }
 .brands{
   background: #FAFAFA;

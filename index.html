@@ -5,7 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <title>Document</title>
@@ -31,19 +33,19 @@
                 <svg class="basket" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.4 4.00016H4.656L4 0.640163C3.9626 0.456742 3.86206 0.292245 3.71589 0.175305C3.56971 0.0583653 3.38716 -0.00361159 3.2 0.000162751H0V1.60016H2.544L5.6 16.9602C5.6374 17.1436 5.73794 17.3081 5.88411 17.425C6.03029 17.542 6.21284 17.6039 6.4 17.6002H20.8V16.0002H7.056L6.4 12.8002H20.8C20.9849 12.8047 21.1657 12.745 21.3116 12.6312C21.4574 12.5174 21.5594 12.3566 21.6 12.1762L23.2 4.97616C23.2268 4.85746 23.2262 4.73421 23.1982 4.61579C23.1702 4.49737 23.1155 4.38689 23.0384 4.29278C22.9612 4.19867 22.8636 4.12339 22.753 4.07268C22.6424 4.02198 22.5217 3.99717 22.4 4.00016ZM20.16 11.2002H6.096L4.976 5.60016H21.4L20.16 11.2002Z" fill="#252B42"/>
                 </svg>
-                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.571472 0H23.4286V2.28571H0.571472V0ZM6.28576 5.71429H23.4286V8H6.28576V5.71429ZM13.4286 11.4286H23.4286V13.7143H13.4286V11.4286Z" fill="#252B42"/>
-                </svg>
+                <div class="mobile-menu">
+                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.571472 0H23.4286V2.28571H0.571472V0ZM6.28576 5.71429H23.4286V8H6.28576V5.71429ZM13.4286 11.4286H23.4286V13.7143H13.4286V11.4286Z" fill="#252B42"/>
+                    </svg>
+                </div>
         </div>
     </div>
-    <div class="container header__container">
-    <nav class="header__menu-mobile">
+    <nav class="header__menu-mobile top-menu">
         <a href="#" class="header__link">Home</a>
         <a href="#" class="header__link">Product</a>
         <a href="#" class="header__link">Pricing</a>
         <a href="#" class="header__link">Contact</a>
     </nav>
-    </div>
 </header>
 <section class="hero">
     <div class="container hero__container">
@@ -214,9 +216,8 @@
         <div class="about__content">
             <div class="about__content__img">
                 <img src="./images/media%20bg-cover.png" alt="">
-                <img class="button__svg" src="./images/button.button.btn.primary-color.btn-circle.btn-lg.png" alt="">
+                <a data-fancybox href="https://www.youtube.com/watch?v=JFqiSr9A-Go" class="hero-link hero-link-2"><img class="button__svg" src="./images/button.button.btn.primary-color.btn-circle.btn-lg.png" alt=""></a>
             </div>
-
             <div class="about__content__right">
                 <h1 class="section__title">Most trusted in
                     our field</h1>
@@ -422,9 +423,12 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-<script src="./js/main.js"></script>
 </body>
 </html>

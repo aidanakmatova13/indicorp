@@ -296,7 +296,9 @@ button {
 }
 .about__content__img .button__svg {
   position: absolute;
-  left: 228px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   top: 170px;
   cursor: pointer;
 }
@@ -328,6 +330,10 @@ button {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.top-menu {
+  display: none;
 }
 
 .brands {
