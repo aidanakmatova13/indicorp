@@ -411,7 +411,7 @@
         margin: auto;
     }
     .about__content__right__desc {
-        width: 330px;
+        width: 324px;
         height: 60px;
         margin: auto;
         margin-bottom: 50px;
@@ -477,12 +477,14 @@
         font-weight: normal;
         letter-spacing: 0.2px;
     }
+    .touch__box__img svg {
+        margin-left: unset;
+    }
 
     .touch {
         padding: 159px 0 131px;
     }
     .section__desc {
-        width: 264px;
         height: 80px;
         margin: auto;
     }
@@ -496,7 +498,6 @@
     }
     .touch__box__item__blue__box{
         width: 328px;
-        height: 333px;
         margin: auto;
     }
     .touch__box__item__blue__box{
@@ -590,6 +591,9 @@
         line-height: 28px;
         font-weight: normal;
         letter-spacing: 0.2px;
+    }
+    .touch__box__img svg {
+        margin-left: unset;
     }
 }
 
