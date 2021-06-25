@@ -201,7 +201,14 @@
         max-width: 500px;
     }
     .consulting__container{
-        max-width: 481px;
+        max-width: 276px;
+        display: block;
+        text-align: left;
+    }
+    .contact__container{
+        max-width: 276px;
+        text-align: left;
+        display: block;
     }
     .mobile-menu{
         display: block;
@@ -504,9 +511,6 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .consulting__container {
-       display: unset;
-    }
     .consulting__btn {
         margin-top: 50px;
     }
@@ -514,11 +518,7 @@
         width: 239px;
         margin: auto;
     }
-    .contact__container{
-        display: unset;
-    }
     .contact__content{
-        margin-left: 117px;
         margin-bottom: 30px;
     }
     .contact__content__line svg {
@@ -564,6 +564,18 @@
         text-align: center;
         margin: auto;
     }
+    .contact__container{
+        max-width: 276px;
+        text-align: left;
+        display: block;
+    }
+    .footer__contacts {
+        width: 300px;
+        margin: auto;
+    }
+    .footer__container{
+        max-width: 276px;
+    }
     .hero__content {
         width: unset;
     }
@@ -595,5 +607,82 @@
     .touch__box__img svg {
         margin-left: unset;
     }
+    .consulting__container {
+        max-width: 276px;
+        text-align: left;
+    }
+
+}
+@media  (max-width: 360px){
+    .container{
+        max-width: 280px ;
+    }
+    .section__title {
+        width: 250px;
+        height: 109px;
+        font-size: 34px;
+    }
+    .section__desc{
+        font-size: 13px;
+    }
+    .hero {
+        text-align: center;
+        padding:100px 0 100px
+    }
+    .hero__title{
+        font-size: 35px;
+        width: unset;
+    }
+    .hero__desc{
+        width: 241px;
+    }
+    .box__item {
+        width: 250px;
+        padding: 30px 20px 30px 30px;
+    }
+    .box__item__title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 10px 0 8px;
+    }
+    .box__item__desc {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .about__content__img {
+        height: 360px;
+        width: 250px;
+    }
+    .about__content__img img {
+        height: 360px;
+    }
+    .about__content__img .button__svg {
+        width: 75px;
+        height: 82px;
+        top: 141px;
+    }
+    .about__content__right__desc {
+        width: 250px;
+    }
+    .about__content__line {
+        width: 250px;
+    }
+    .touch__box__item {
+        width: 250px;
+        height: 330px;
+    }
+    .touch__box__item__blue__box {
+        background: #252B42;
+        width: 250px;
+        height: 330px;
+        padding: 50px 0 50px;
+    }
+    .search{
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+
 }
 
